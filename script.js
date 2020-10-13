@@ -19,7 +19,10 @@ function handleOrderClick (event){
     console.log('button was clicked');
     gtag('event', 'Click link', {
         'event_category': 'order test',
-        'event_label': 'order event happened'
+        'event_label': 'order event happened',
+        'event_callback':function(){
+            document.location ='https://sognehome.no/produkt/kjokken/trygve-skaug-krus/krus-hvit-60107';
+        }
     });
 }
 
